@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title> Scattegories Generator</title>
+	<link rel="stylesheet" type="text/css" href="scatt.css">
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+
+<body>
+	<canvas id="myCanvas" ></canvas>
+	<!-- <canvas id="myCanvasCategories" ></canvas> -->
+
+
+
+
+
+<section class="grid">
+
+	<!--TITLE------------------------------------------------------------------->
+
+ 	<section class="scattTitle"> Scattegories Generator 
+
+		<button 
+			type="button" 
+			onClick="playClicked()"
+			class="btn play__button">
+			"Play"
+		</button>
+
+ 		<button 
+ 			type="button" 
+ 			onClick="titleResetClicked()"
+ 			class="btn refresh__button">
+			<span class="material-icons">restart_alt</span>
+		</button>
+
+
+ 	</section>
+
+
+	<!--LETTER------------------------------------------------------------------>
+	
+	<section class="letterBlock">
+
+		<canvas id="myCanvasLetter"> 
+
+			<div class="generateRandomLetter()"></div>
+
+		</canvas>
+
+			<button 
+				type="button" 
+				onClick="generateRandomLetter()" 
+				class="btn letter__button">
+				<span class="material-icons">restart_alt</span>
+			</button>
+
+		
+
+	</section>
+
+
+	<!--CATEGORIES-------------------------------------------------------------->
+
+	<section class="categoryBlock"> 
+
+		<canvas id="myCanvasCategories"> 
+
+			<div class="categoryNum">
+				1<br>
+				2<br>
+				3<br>
+				4<br>
+				5<br>
+				6<br>
+				7<br>
+				8<br>
+				9<br>
+				10<br>
+			</div>
+
+			</canvas>
+
+			<button 
+				type="button" 
+				onClick="categoriesResetClicked()"
+				class="btn category__button">
+				<span class="material-icons">restart_alt</span>
+			</button>
+
+		
+
+	</section>
+
+
+	<!--TIMER------------------------------------------------------------------->
+
+	<section class="timerBlock">
+
+		<p><span id="countdowntimer">180</span>s</p>
+		<!--Timer code from:
+		https://stackoverflow.com/questions/31106189/create-a-simple-10-second-countdown-->
+
+		<button 
+			type="button"  
+			onClick="timerResetClicked()"
+			class="btn timer__button">
+			<span class="material-icons">restart_alt</span>
+		</button>
+
+	</section>
+
+
+
+</section>
+
+
+</body>
+
+	<p id="demo"></p>
+
+	<script type="text/javascript" src="scatt.js"></script>
+
+</html>

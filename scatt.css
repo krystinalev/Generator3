@@ -1,0 +1,136 @@
+*{
+	font-family: helvetica;
+	margin-top: 0;
+	padding: 0;
+	box-sizing: border-box;
+	}
+
+#myCanvasLetter{
+	width: 100%;
+	/*height: 100%;*/
+	/*background: gold;*/
+}
+
+#myCanvasCategories{
+	width: 90%;
+	/*height: 100%;*/
+	margin-left: 5vw;
+	/*background: pink;*/
+}
+
+
+
+
+
+.grid{
+	display: inline-grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	grid-template-areas: 
+		'scattTitle scattTitle scattTitle'
+		'letterBlock categoryBlock categoryBlock'
+		'timerBlock categoryBlock categoryBlock';
+	margin-left: auto;
+	margin-right: auto;
+	width: 100%;
+	height: 30vw;
+	padding: 5em;
+	grid-gap: 1em;
+	}
+
+
+.letterBlock, .categoryBlock, .timerBlock, .scattTitle {
+	/*background: white;*/
+	border: solid 4px black;
+	position: relative;
+	box-sizing: border-box;
+	
+
+	}
+
+.letterBlock { 
+	grid-area: letterBlock;
+	height: 30vh;
+	text-align: center;
+	}
+
+.timerBlock { 
+	grid-area: timerBlock;
+	height: 30vh;
+	text-align: center;
+	
+}
+
+.categoryBlock { 
+	grid-area: categoryBlock;
+	/*padding: 2vw;*/
+	}
+
+.scattTitle { 
+	grid-area: scattTitle;
+	font-size: 5vw;
+	padding: 0.5em;
+	align-self: center;
+	}
+
+.btn:hover{
+	background: yellow;
+}
+
+
+#countdowntimer, p{
+	font-size: 7vw;
+	font-weight: 500;
+	padding-top: 4vw;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+.timer__part{
+	font-size: 7vw;
+	}
+
+
+.timer__button, .category__button, .letter__button{
+	position: absolute;
+	bottom: 2em;
+	right: 2em;
+	padding: 0.5em;
+	filter: none;
+	background: none;
+	border: 3px solid black;
+	}
+
+.play__button, .refresh__button {
+	position: relative;
+	padding: 0.5em;
+	align-content: right;
+	filter: none;
+	background: none;
+	border: 3px solid black;
+	height: 5vw;
+	width: 5vw;
+
+	}
+
+.categoryNum{
+	font-size: 2vw;
+	line-height: 3vw;
+
+
+}
+
+
+
+
+
+
+
